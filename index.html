@@ -1,120 +1,104 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0a0a0a" />
-  <meta name="description" content="Brainwashed is an independent artist management and entertainment company from Jakarta, established in 1996." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f1efe9">
+  <meta name="description" content="Brainwashed is an independent artist management and entertainment company from Jakarta, established in 1996.">
   <title>Brainwashed — Independent Since 1996</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Brainwashed home">
-      <img src="brainwashed-logo.png" alt="Brainwashed" />
-    </a>
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#artists">Artists</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+    <a class="brand" href="#top" aria-label="Brainwashed home"><img src="brainwashed-logo.png" alt="Brainwashed"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span>Menu</span><i></i></button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="#studio">About</a><a href="#artists">Artists</a><a href="#services">Services</a><a href="#contact">Contact</a>
     </nav>
+    <a class="talk-button" href="https://wa.me/6281382725474" target="_blank" rel="noopener">Let's talk ↗</a>
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="issue">Jakarta, Indonesia / Est. 1996</div>
-      <h1 id="hero-title">Independent<br><span>by instinct.</span></h1>
-      <div class="hero-bottom">
-        <p>Artist management, entertainment, and culture—built from the ground up.</p>
-        <a class="arrow-link" href="#artists">Meet the roster <span aria-hidden="true">↘</span></a>
+    <section class="hero panel-light">
+      <p class="eyebrow reveal">Independent artist management · Jakarta</p>
+      <h1 class="hero-title" aria-label="The noise survives">
+        <span class="line reveal">The noise</span>
+        <span class="line outline reveal">survives.</span>
+      </h1>
+      <dl class="hero-meta reveal">
+        <div><dt>Founded</dt><dd>1996</dd></div>
+        <div><dt>Based in</dt><dd>Jakarta</dd></div>
+        <div><dt>Working in</dt><dd>Music · Culture · Live</dd></div>
+      </dl>
+      <a class="scroll-cue" href="#moments" aria-label="Scroll to selected moments">Scroll ↓</a>
+    </section>
+
+    <section class="moments panel-dark" id="moments">
+      <div class="section-label"><span>(Selected moments)</span><span>©1996—2026</span></div>
+      <div class="moment-stage reveal">
+        <figure class="moment moment-one"><img src="seringai-2026.jpg" alt="Seringai band portrait"><figcaption>Seringai / 2026</figcaption></figure>
+        <figure class="moment moment-two"><img src="stepforward-2026.jpeg" alt="Stepforward band portrait"><figcaption>Stepforward / 2026</figcaption></figure>
+        <p class="moment-copy">Thirty years of ideas,<br>amplifiers, and conviction.</p>
       </div>
     </section>
 
-    <div class="ticker" aria-hidden="true">
-      <div>ARTIST MANAGEMENT • MUSIC • EVENTS • MEDIA • CULTURE • SINCE 1996 • ARTIST MANAGEMENT • MUSIC • EVENTS • MEDIA • CULTURE • SINCE 1996 •</div>
-    </div>
-
-    <section class="about section-grid" id="about">
-      <div class="section-index">01 / About</div>
-      <div class="about-copy">
-        <h2>Not manufactured.<br>Not temporary.</h2>
-        <p class="lead">Brainwashed began as an independent zine in September 1996. A year later, it evolved into Brainwashed Entertainment and Brainwashed Management—working with artists, ideas, and movements that shape Indonesia’s alternative culture.</p>
-        <p>Rooted in Jakarta’s independent music scene, Brainwashed brings decades of hands-on experience in artist management, live entertainment, media, and creative development. We build enduring careers through clear strategy, trusted relationships, and an instinct for culture.</p>
-        <div class="facts">
-          <div><strong>1996</strong><span>The beginning</span></div>
-          <div><strong>30</strong><span>Years independent</span></div>
-          <div><strong>JKT</strong><span>Home base</span></div>
-        </div>
+    <section class="statement panel-red" id="studio">
+      <div class="section-label"><span>(Studio)</span><span>Brainwashed®</span></div>
+      <p class="statement-copy reveal">We build <em>lasting careers</em> for artists who move culture forward.</p>
+      <div class="statement-grid reveal">
+        <p>Brainwashed started as an independent zine in September 1996. It grew into an entertainment and management company rooted in Indonesia's alternative music scene.</p>
+        <p>Our work combines honest strategy, day-to-day representation, live development, and an instinct for what makes an artist impossible to ignore.</p>
       </div>
     </section>
 
-    <section class="artists" id="artists" aria-labelledby="artists-title">
-      <div class="section-head">
-        <div class="section-index">02 / Artists</div>
-        <h2 id="artists-title">Current roster</h2>
-      </div>
-
-      <article class="artist-card artist-wide">
-        <div class="photo-wrap">
-          <img src="seringai-2026.jpg" alt="Seringai band portrait, 2026" />
-          <span class="photo-credit">Photo: Agung Hartamurti</span>
-        </div>
-        <div class="artist-info">
-          <span class="artist-no">A / 01</span>
-          <h3>SERINGAI</h3>
-          <p>Jakarta’s high-octane rock institution. Fierce, outspoken, and relentlessly independent.</p>
-          <span class="status">Management roster</span>
-        </div>
-      </article>
-
-      <article class="artist-card artist-tall">
-        <div class="artist-info">
-          <span class="artist-no">A / 02</span>
-          <h3>STEPFORWARD</h3>
-          <p>A foundational force in Indonesian hardcore, moving forward with the same conviction that started it all.</p>
-          <span class="status">Management roster</span>
-        </div>
-        <div class="photo-wrap">
-          <img src="stepforward-2026.jpeg" alt="Stepforward band portrait, 2026" />
-          <span class="photo-credit dark">Photo: Rigel Haryanto</span>
-        </div>
-      </article>
-    </section>
-
-    <section class="services section-grid" id="services">
-      <div class="section-index">03 / What we do</div>
-      <div>
-        <h2>Built around<br>the artist.</h2>
-        <div class="service-list">
-          <div><span>01</span><h3>Artist Management</h3><p>Career strategy, representation, negotiation, and day-to-day direction.</p></div>
-          <div><span>02</span><h3>Live & Booking</h3><p>Show development, buyer relations, touring, and performance coordination.</p></div>
-          <div><span>03</span><h3>Creative Development</h3><p>Release strategy, storytelling, partnerships, and long-term brand building.</p></div>
-          <div><span>04</span><h3>Entertainment & Media</h3><p>Original projects and collaborations at the intersection of music and culture.</p></div>
-        </div>
+    <section class="roster panel-light" id="artists">
+      <div class="section-label"><span>(Current roster)</span><span>02 artists</span></div>
+      <h2 class="section-title reveal">Artists</h2>
+      <div class="artist-list">
+        <article class="artist-row reveal">
+          <span class="artist-index">01</span>
+          <h3>Seringai</h3>
+          <p>High-octane rock<br>Jakarta, ID</p>
+          <div class="artist-image"><img src="seringai-2026.jpg" alt="Seringai"><span>Photo / Agung Hartamurti</span></div>
+          <span class="artist-arrow">↗</span>
+        </article>
+        <article class="artist-row reveal">
+          <span class="artist-index">02</span>
+          <h3>Stepforward</h3>
+          <p>Hardcore<br>Jakarta, ID</p>
+          <div class="artist-image portrait"><img src="stepforward-2026.jpeg" alt="Stepforward"><span>Photo / Rigel Haryanto</span></div>
+          <span class="artist-arrow">↗</span>
+        </article>
       </div>
     </section>
 
-    <section class="manifesto">
-      <p>Three decades in,<br>still curious.<br><span>Still independent.</span></p>
+    <section class="services panel-dark" id="services">
+      <div class="section-label"><span>(Services)</span><span>Built around the artist</span></div>
+      <div class="services-intro reveal"><p>Independent thinking.<br>Long-term work.</p><span>From the first plan to the loudest room—we stay close to the work.</span></div>
+      <div class="service-list">
+        <article class="reveal"><span>01</span><h3>Artist<br>Management</h3><p>Career strategy, representation, negotiation, and day-to-day direction.</p></article>
+        <article class="reveal"><span>02</span><h3>Live &<br>Booking</h3><p>Show development, buyer relations, touring, and performance coordination.</p></article>
+        <article class="reveal"><span>03</span><h3>Creative<br>Development</h3><p>Release strategy, storytelling, partnerships, and long-term identity.</p></article>
+        <article class="reveal"><span>04</span><h3>Entertainment<br>& Media</h3><p>Original projects and collaborations across music, media, and culture.</p></article>
+      </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div class="section-index">04 / Get in touch</div>
-      <h2>Let’s make<br>something matter.</h2>
-      <div class="contact-links">
-        <a href="mailto:wendi@brainwashedmanagement.com">wendi@brainwashedmanagement.com <span>↗</span></a>
-        <a href="https://wa.me/6281382725474" target="_blank" rel="noopener">WhatsApp +62 813 8272 5474 <span>↗</span></a>
+    <section class="quote panel-light">
+      <blockquote class="reveal">Independent isn't a genre.<br><em>It's how we work.</em></blockquote>
+      <p>— Brainwashed Management</p>
+    </section>
+
+    <section class="contact panel-red" id="contact">
+      <div class="section-label"><span>(Contact)</span><span>Jakarta, Indonesia</span></div>
+      <h2 class="reveal">Start a<br>conversation <span>↗</span></h2>
+      <div class="contact-grid reveal">
+        <div><span>Email</span><a href="mailto:wendi@brainwashedmanagement.com">wendi@brainwashedmanagement.com</a></div>
+        <div><span>WhatsApp</span><a href="https://wa.me/6281382725474" target="_blank" rel="noopener">+62 813 8272 5474</a></div>
       </div>
-      <footer>
-        <span>Brainwashed Management</span>
-        <span>Jakarta, Indonesia</span>
-        <span>© <span id="year">2026</span></span>
-      </footer>
+      <footer><img src="brainwashed-logo.png" alt="Brainwashed"><div><a href="#top">Back to top ↑</a><p>© <span id="year">2026</span> Brainwashed Management</p></div></footer>
     </section>
   </main>
   <script src="site.js"></script>
