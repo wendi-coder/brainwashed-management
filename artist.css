@@ -8,6 +8,7 @@
 .artist-hero-image img{height:100%;object-fit:cover;object-position:50% 24%;filter:grayscale(1)}
 .artist-hero.step .artist-hero-image{width:min(62vw,880px);height:min(76vh,900px);margin-left:auto}
 .artist-hero.step .artist-hero-image img{object-position:50% 43%}
+.artist-hero.negatifa .artist-hero-image img{object-position:50% 45%}
 .artist-intro{padding:24px 3.5vw 10vw}
 .artist-lead{font:400 clamp(2.6rem,6.5vw,6.5rem)/.94 var(--display);letter-spacing:-.055em;text-transform:uppercase;max-width:1300px;margin:10vw 0}
 .artist-lead em{font-style:normal;color:var(--red)}
