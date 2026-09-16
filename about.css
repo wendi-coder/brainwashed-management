@@ -23,3 +23,12 @@
 .about-cta:hover{background:var(--red)}
 .about-closing footer{margin-top:auto}
 @media(max-width:760px){.about-hero{padding-top:90px;padding-bottom:18vw}.about-hero h1{font-size:17vw;margin:15vh 0 12vw}.about-opening{margin-left:0;font-size:1.2rem}.origin,.timeline,.principle{padding-bottom:20vw}.origin-statement{font-size:10vw;margin:24vw 0 18vw}.story-copy{grid-template-columns:1fr;margin-left:18%;font-size:1rem}.timeline-entry{grid-template-columns:1fr;padding:25px 0 55px}.timeline-entry:first-of-type{margin-top:18vw}.timeline-entry time{margin-bottom:30px}.timeline-entry h2{font-size:10vw}.principle-lead{font-size:11vw;margin:24vw 0 18vw}.principle-copy{grid-template-columns:1fr;margin-left:12%;gap:20px;font-size:1rem}.about-closing{padding-bottom:28px}.about-closing blockquote{font-size:9.5vw;margin:25vw 0 16vw}.about-cta{margin-bottom:24vw}}
+@media(max-width:480px){
+.about-hero,.origin,.timeline,.principle,.about-closing{padding-left:20px;padding-right:20px}
+.about-hero{min-height:auto;padding-top:92px;padding-bottom:80px}.about-meta,.about-label{gap:15px;font-size:.54rem;line-height:1.45}.about-meta span:last-child,.about-label span:last-child{text-align:right}
+.about-hero h1{font-size:15.2vw;line-height:.82;letter-spacing:-.065em;margin:80px 0 55px}.about-opening{font-size:1.08rem;line-height:1.55}
+.origin{padding-top:22px;padding-bottom:85px}.origin-statement{font-size:9.4vw;line-height:.94;margin:85px 0 65px}.story-copy{margin-left:0;font-size:.97rem}
+.timeline{padding-top:22px;padding-bottom:80px}.timeline-entry:first-of-type{margin-top:70px}.timeline-entry{padding:24px 0 48px}.timeline-entry time{font-size:.62rem;margin-bottom:24px}.timeline-entry h2{font-size:9.5vw;line-height:.94;margin-bottom:28px}.timeline-entry p{font-size:.96rem;line-height:1.65}
+.principle{padding-top:22px;padding-bottom:85px}.principle-lead{font-size:9.8vw;line-height:.92;margin:85px 0 65px}.principle-copy{margin-left:0;font-size:.97rem}
+.about-closing{min-height:auto;padding-top:22px;padding-bottom:26px}.about-closing blockquote{font-size:8.8vw;line-height:.98;margin:80px 0 55px}.about-cta{margin-bottom:75px}.about-closing footer{margin-top:0}
+}
