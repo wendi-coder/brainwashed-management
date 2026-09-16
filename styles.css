@@ -124,3 +124,33 @@ footer div{text-align:left}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
 .reveal{opacity:1;transform:none;transition:none}
 }
+@media(max-width:480px){
+html,body{width:100%;max-width:100%;overflow-x:hidden}
+.site-header{height:62px;padding:0 20px}
+.brand{width:122px}
+.site-header nav{top:62px;padding:32px 20px;width:100vw;max-width:100%;max-height:calc(100vh - 62px);overflow-y:auto}
+.hero{min-height:100svh;padding:96px 20px 28px}
+.eyebrow{top:92px;max-width:75%;font-size:.56rem;line-height:1.5}
+.hero-title{font-size:18.5vw;line-height:.82;letter-spacing:-.07em;margin:0 0 13vh;overflow-wrap:normal}
+.hero-meta{grid-template-columns:1fr 1fr;gap:17px 10px;padding-top:12px}
+.hero-meta div{display:block;min-width:0}.hero-meta div:last-child{grid-column:1/-1}
+.hero-meta dd{font-size:.59rem;overflow-wrap:anywhere}.hero-meta dt{font-size:.52rem}
+.section-label{gap:18px;align-items:flex-start;font-size:.56rem;line-height:1.45}.section-label span:last-child{text-align:right}
+.moments,.statement,.roster,.services,.contact{padding-left:20px;padding-right:20px}
+.moment-stage{min-height:0;margin-top:55px;display:flex;flex-direction:column;gap:22px}
+.moment{position:relative!important;inset:auto!important;width:100%!important;height:auto!important}
+.moment img{height:auto;aspect-ratio:auto;object-fit:contain}.moment-two{width:76%!important;align-self:flex-end}
+.moment-copy{position:relative;inset:auto;font-size:9vw;margin:25px 0 70px}
+.statement-copy{font-size:11vw;line-height:.9;margin:90px 0 70px}
+.statement-grid{margin-left:0;gap:24px;font-size:.98rem}
+.section-title{font-size:17.5vw;line-height:.84;margin:85px 0 55px}
+.artist-row{grid-template-columns:25px minmax(0,1fr) 24px;min-height:105px;padding:20px 0}
+.artist-row h3{font-size:9.5vw;line-height:.92;overflow-wrap:anywhere}.artist-index{font-size:.57rem}.artist-arrow{font-size:1.2rem}
+.services-intro{margin:85px 0 65px}.services-intro p{font-size:10.5vw}.services-intro span{font-size:.95rem}
+.service-list article{min-height:auto!important;grid-template-columns:40px minmax(0,1fr);padding:22px 0 45px!important}
+.service-list h3{font-size:9vw;margin:25px 0}.service-list p{font-size:.9rem}
+.quote{padding:90px 20px 65px}.quote blockquote{font-size:10.2vw;line-height:.94}.quote>p{text-align:left;margin-top:45px}
+.contact{padding-top:75px;padding-bottom:25px;min-height:100svh}.contact h2{font-size:15vw;line-height:.84;margin:80px 0 60px}
+.contact-grid{margin-top:0}.contact-grid a{font-size:.94rem;line-height:1.4;word-break:break-word}
+footer{width:100%;gap:28px;padding-top:55px}footer img{width:min(280px,82%)}footer div{max-width:100%;line-height:1.45}
+}
