@@ -56,6 +56,8 @@ img{display:block;width:100%}
 .artist-row:hover .artist-image{opacity:1;transform:translateY(-50%) rotate(-2deg)}
 .services{padding:24px 3.5vw 9vw}
 .services-intro{display:grid;grid-template-columns:1fr 1fr;gap:8vw;margin:10vw 0 8vw;align-items:end}
+.services-intro.single{grid-template-columns:1fr}
+.services-intro.single p{max-width:1250px}
 .services-intro p{font:400 clamp(3rem,7vw,7rem)/.9 var(--display);letter-spacing:-.06em;text-transform:uppercase;margin:0}
 .services-intro span{font-size:1.25rem;line-height:1.45;max-width:480px}
 .service-list{display:grid;grid-template-columns:repeat(2,1fr)}
