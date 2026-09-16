@@ -19,6 +19,7 @@ img{display:block;width:100%}
 .eyebrow,.section-label{font:400 .66rem var(--mono);letter-spacing:.13em;text-transform:uppercase}
 .eyebrow{position:absolute;top:112px}
 .hero-title{font:400 clamp(5rem,15.1vw,14rem)/.72 var(--display);letter-spacing:-.082em;text-transform:uppercase;margin:0 0 7vh}
+.hero-title.hero-title-long{font-size:clamp(4rem,10.4vw,10rem);line-height:.78}
 .hero-title .line{display:block}
 .hero-title .line:nth-child(2){text-align:right}
 .hero-title .outline{color:var(--red)}
@@ -132,6 +133,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}
 .hero{min-height:100svh;padding:96px 20px 28px}
 .eyebrow{top:92px;max-width:75%;font-size:.56rem;line-height:1.5}
 .hero-title{font-size:18.5vw;line-height:.82;letter-spacing:-.07em;margin:0 0 13vh;overflow-wrap:normal}
+.hero-title.hero-title-long{font-size:14.7vw;line-height:.84}
 .hero-meta{grid-template-columns:1fr 1fr;gap:17px 10px;padding-top:12px}
 .hero-meta div{display:block;min-width:0}.hero-meta div:last-child{grid-column:1/-1}
 .hero-meta dd{font-size:.59rem;overflow-wrap:anywhere}.hero-meta dt{font-size:.52rem}
