@@ -33,14 +33,22 @@ img{display:block;width:100%}
 .scroll-cue{position:absolute;bottom:25px;left:3.5vw;font:400 .6rem var(--mono);text-transform:uppercase}
 .section-label{display:flex;justify-content:space-between;border-top:1px solid;padding-top:12px}
 .moments{padding:24px 3.5vw 9vw}
-.moment-stage{min-height:930px;position:relative;margin-top:7vw}
-.moment{position:absolute;margin:0}
-.moment img{height:100%;object-fit:cover;filter:grayscale(1)}
-.moment figcaption,.artist-image span{font:400 .56rem var(--mono);letter-spacing:.06em;text-transform:uppercase;margin-top:8px}
-.moment-one{width:57%;height:540px;left:8%;top:0}
-.moment-two{width:28%;height:520px;right:3%;top:265px}
-.moment-two img{object-position:50% 60%}
-.moment-copy{position:absolute;left:3%;bottom:0;margin:0;font:400 clamp(2.2rem,5vw,5.5rem)/.92 var(--display);letter-spacing:-.055em;text-transform:uppercase;z-index:2}
+.archive-intro{display:grid;grid-template-columns:2fr 1fr;align-items:end;gap:7vw;margin:9vw 0 8vw}
+.archive-intro p{margin:0;font:400 clamp(2.8rem,6.7vw,7.2rem)/.88 var(--display);letter-spacing:-.06em;text-transform:uppercase}
+.archive-intro span{justify-self:end;font:400 .65rem/1.6 var(--mono);letter-spacing:.1em;text-align:right;text-transform:uppercase;color:var(--muted)}
+.archive-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(30px,5vw,86px) 2.2vw;align-items:start}
+.archive-card{grid-column:span 5;margin:0}
+.archive-card.wide{grid-column:span 7}
+.archive-card.portrait{grid-column:span 4}
+.archive-card.third{grid-column:span 4}
+.archive-card.half{grid-column:span 6}
+.archive-card img{width:100%;height:auto;filter:grayscale(1);transition:filter .45s ease,transform .45s ease}
+.archive-card:hover img{filter:grayscale(0);transform:scale(.992)}
+.archive-card figcaption{display:grid;grid-template-columns:auto 1fr;gap:18px;border-top:1px solid rgba(241,239,233,.35);padding-top:9px;margin-top:10px;font:400 .56rem/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase}
+.archive-card figcaption time{color:var(--red)}
+.archive-card figcaption span{text-align:right}
+.archive-card:nth-child(3),.archive-card:nth-child(6),.archive-card:nth-child(10){margin-left:auto;margin-right:auto;width:86%}
+.artist-image span{font:400 .56rem var(--mono);letter-spacing:.06em;text-transform:uppercase;margin-top:8px}
 .statement{padding:24px 3.5vw 10vw}
 .statement-copy{font:400 clamp(4rem,10vw,10rem)/.85 var(--display);letter-spacing:-.07em;text-transform:uppercase;max-width:1400px;margin:12vw 0 9vw}
 .statement-copy em,.quote em{font-style:normal;color:var(--paper)}
@@ -108,6 +116,14 @@ footer p{margin:15px 0 0}
 .hero-meta div:last-child{grid-column:span 2}
 .hero-meta dt{margin-bottom:7px}
 .scroll-cue{display:none}
+.archive-intro{grid-template-columns:1fr;margin:20vw 0 16vw;gap:28px}
+.archive-intro p{font-size:11vw}
+.archive-intro span{justify-self:start;text-align:left}
+.archive-grid{gap:54px 18px}
+.archive-card,.archive-card.wide,.archive-card.half{grid-column:span 12}
+.archive-card.portrait{grid-column:2/span 9}
+.archive-card.third{grid-column:span 12}
+.archive-card:nth-child(3),.archive-card:nth-child(6),.archive-card:nth-child(10){width:100%}
 .moment-stage{min-height:750px}
 .moment-one{width:90%;height:340px;left:0}
 .moment-two{width:54%;height:360px;right:0;top:300px}
@@ -150,6 +166,11 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}
 .hero-meta dd{font-size:.59rem;overflow-wrap:anywhere}.hero-meta dt{font-size:.52rem}
 .section-label{gap:18px;align-items:flex-start;font-size:.56rem;line-height:1.45}.section-label span:last-child{text-align:right}
 .moments,.statement,.roster,.services,.contact{padding-left:20px;padding-right:20px}
+.archive-intro{margin:82px 0 70px}.archive-intro p{font-size:10.8vw;line-height:.9}
+.archive-grid{display:flex;flex-direction:column;gap:52px}
+.archive-card,.archive-card.wide,.archive-card.portrait,.archive-card.third,.archive-card.half{width:100%;margin:0}
+.archive-card.portrait{width:82%;align-self:flex-end}
+.archive-card figcaption{font-size:.52rem;gap:10px}
 .moment-stage{min-height:0;margin-top:55px;display:flex;flex-direction:column;gap:22px}
 .moment{position:relative!important;inset:auto!important;width:100%!important;height:auto!important}
 .moment img{height:auto;aspect-ratio:auto;object-fit:contain}.moment-two{width:76%!important;align-self:flex-end}
