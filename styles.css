@@ -44,6 +44,7 @@ img{display:block;width:100%}
 .archive-card.half{grid-column:span 6}
 .archive-card.full{grid-column:span 12;width:88%;justify-self:center}
 .archive-card img{width:100%;height:auto;filter:grayscale(1);transition:filter .45s ease,transform .45s ease}
+.archive-card.roster-moment img{aspect-ratio:4/3;object-fit:cover;object-position:center}
 .archive-card:hover img{filter:grayscale(0);transform:scale(.992)}
 .archive-card figcaption{display:grid;grid-template-columns:auto 1fr;gap:18px;border-top:1px solid rgba(241,239,233,.35);padding-top:9px;margin-top:10px;font:400 .56rem/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase}
 .archive-card figcaption time{color:var(--red)}
@@ -171,6 +172,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}
 .archive-grid{display:flex;flex-direction:column;gap:52px}
 .archive-card,.archive-card.wide,.archive-card.portrait,.archive-card.third,.archive-card.half,.archive-card.full{width:100%;margin:0}
 .archive-card.portrait{width:82%;align-self:flex-end}
+.archive-card.roster-moment img{aspect-ratio:auto;object-fit:contain}
 .archive-card figcaption{font-size:.52rem;gap:10px}
 .moment-stage{min-height:0;margin-top:55px;display:flex;flex-direction:column;gap:22px}
 .moment{position:relative!important;inset:auto!important;width:100%!important;height:auto!important}
