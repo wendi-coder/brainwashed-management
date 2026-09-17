@@ -42,12 +42,13 @@ img{display:block;width:100%}
 .archive-card.portrait{grid-column:span 4}
 .archive-card.third{grid-column:span 4}
 .archive-card.half{grid-column:span 6}
+.archive-card.full{grid-column:span 12;width:88%;justify-self:center}
 .archive-card img{width:100%;height:auto;filter:grayscale(1);transition:filter .45s ease,transform .45s ease}
 .archive-card:hover img{filter:grayscale(0);transform:scale(.992)}
 .archive-card figcaption{display:grid;grid-template-columns:auto 1fr;gap:18px;border-top:1px solid rgba(241,239,233,.35);padding-top:9px;margin-top:10px;font:400 .56rem/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase}
 .archive-card figcaption time{color:var(--red)}
 .archive-card figcaption span{text-align:right}
-.archive-card:nth-child(3),.archive-card:nth-child(6),.archive-card:nth-child(10){margin-left:auto;margin-right:auto;width:86%}
+.archive-card.portrait{margin-left:auto;margin-right:auto;width:86%}
 .artist-image span{font:400 .56rem var(--mono);letter-spacing:.06em;text-transform:uppercase;margin-top:8px}
 .statement{padding:24px 3.5vw 10vw}
 .statement-copy{font:400 clamp(4rem,10vw,10rem)/.85 var(--display);letter-spacing:-.07em;text-transform:uppercase;max-width:1400px;margin:12vw 0 9vw}
@@ -121,10 +122,9 @@ footer p{margin:15px 0 0}
 .archive-intro p{font-size:11vw}
 .archive-intro span{justify-self:start;text-align:left}
 .archive-grid{gap:54px 18px}
-.archive-card,.archive-card.wide,.archive-card.half{grid-column:span 12}
+.archive-card,.archive-card.wide,.archive-card.half,.archive-card.full{grid-column:span 12}
 .archive-card.portrait{grid-column:2/span 9}
 .archive-card.third{grid-column:span 12}
-.archive-card:nth-child(3),.archive-card:nth-child(6),.archive-card:nth-child(10){width:100%}
 .moment-stage{min-height:750px}
 .moment-one{width:90%;height:340px;left:0}
 .moment-two{width:54%;height:360px;right:0;top:300px}
@@ -169,7 +169,7 @@ html,body{width:100%;max-width:100%;overflow-x:hidden}
 .moments,.statement,.roster,.services,.contact{padding-left:20px;padding-right:20px}
 .archive-intro{margin:82px 0 70px}.archive-intro p{font-size:10.8vw;line-height:.9}
 .archive-grid{display:flex;flex-direction:column;gap:52px}
-.archive-card,.archive-card.wide,.archive-card.portrait,.archive-card.third,.archive-card.half{width:100%;margin:0}
+.archive-card,.archive-card.wide,.archive-card.portrait,.archive-card.third,.archive-card.half,.archive-card.full{width:100%;margin:0}
 .archive-card.portrait{width:82%;align-self:flex-end}
 .archive-card figcaption{font-size:.52rem;gap:10px}
 .moment-stage{min-height:0;margin-top:55px;display:flex;flex-direction:column;gap:22px}
