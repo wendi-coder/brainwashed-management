@@ -9,7 +9,8 @@ img{display:block;width:100%}
 .panel-dark{background:var(--ink);color:var(--paper)}
 .panel-red{background:var(--red);color:var(--ink)}
 .site-header{position:fixed;top:0;left:0;right:0;height:72px;padding:0 3.5vw;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;border-bottom:1px solid currentColor;z-index:50;mix-blend-mode:difference;color:white}
-.brand{width:154px;background:#fff;padding:3px 6px}
+.brand{width:154px;background:transparent;padding:0}
+.brand img{filter:invert(1)}
 .site-header nav{display:flex;gap:36px;font:500 .68rem var(--mono);letter-spacing:.08em;text-transform:uppercase}
 .site-header nav a,.talk-button{transition:opacity .2s}
 .site-header nav a:hover,.talk-button:hover{opacity:.5}
@@ -80,7 +81,7 @@ img{display:block;width:100%}
 .contact-grid a{font-size:clamp(1rem,2vw,1.5rem);overflow-wrap:anywhere}
 .contact-grid a:hover{text-decoration:underline}
 footer{display:flex;justify-content:space-between;align-items:end;margin-top:9vw}
-footer img{width:min(420px,42vw);background:#fff;padding:5px 9px}
+footer img{width:min(420px,42vw);background:transparent;padding:0}
 footer div{text-align:right;font:400 .59rem var(--mono);text-transform:uppercase}
 footer p{margin:15px 0 0}
 .reveal{opacity:0;transform:translateY(35px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
