@@ -2,7 +2,10 @@ backend:
   name: git-gateway
   repo: wendi-coder/brainwashed-management
   branch: main
-  identity_url: https://auth.decapbridge.com/sites/REPLACE_WITH_DECAPBRIDGE_SITE_ID
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/14dda6d7-f479-43fc-875e-9c0afcf66a0c/pkce
+  auth_token_endpoint: /sites/14dda6d7-f479-43fc-875e-9c0afcf66a0c/token
   gateway_url: https://gateway.decapbridge.com
   commit_messages:
     create: 'Create {{collection}} “{{slug}}” via DecapBridge'
