@@ -19,4 +19,5 @@ const observer=new IntersectionObserver(entries=>{
 },{threshold:.12,rootMargin:'0px 0px -5%'});
 
 document.querySelectorAll('.reveal').forEach(element=>observer.observe(element));
-document.querySelector('#year').textContent=new Date().getFullYear();
+const year=document.querySelector('#year');
+if(year)year.textContent=new Date().getFullYear();

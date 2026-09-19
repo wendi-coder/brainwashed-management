@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f1efe9">
+  <meta name="description" content="News from Brainwashed Management.">
+  <title>News — Brainwashed Management</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Mono:wght@300;400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="news.css">
+</head>
+<body class="news-page article-page" data-news-view="article">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Brainwashed home"><img class="brand-eye" src="brainwashed-eye.png" alt=""><img class="brand-wordmark" src="brainwashed-logo.png" alt="Brainwashed"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span>Menu</span><i></i></button>
+    <nav id="main-nav" aria-label="Main navigation"><a href="about.html">About</a><a href="index.html#artists">Roster</a><a href="news.html">News</a><a href="index.html#contact">Contact</a></nav>
+    <a class="talk-button" href="https://wa.me/6281382725474" target="_blank" rel="noopener">Let's talk ↗</a>
+  </header>
+  <main id="article-root" aria-live="polite"><p class="article-loading">Loading article…</p></main>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script><script src="site.js"></script><script src="news.js"></script>
+</body>
+</html>

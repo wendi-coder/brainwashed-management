@@ -1,0 +1,52 @@
+backend:
+  name: git-gateway
+  repo: wendi-coder/brainwashed-management
+  branch: main
+  identity_url: https://auth.decapbridge.com/sites/REPLACE_WITH_DECAPBRIDGE_SITE_ID
+  gateway_url: https://gateway.decapbridge.com
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}” via DecapBridge'
+    update: 'Update {{collection}} “{{slug}}” via DecapBridge'
+    delete: 'Delete {{collection}} “{{slug}}” via DecapBridge'
+    uploadMedia: 'Upload “{{path}}” via DecapBridge'
+    deleteMedia: 'Delete “{{path}}” via DecapBridge'
+
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+site_url: https://wendi-coder.github.io/brainwashed-management/
+display_url: https://wendi-coder.github.io/brainwashed-management/
+media_folder: uploads/news
+public_folder: /brainwashed-management/uploads/news
+
+collections:
+  - name: news_content
+    label: News
+    files:
+      - name: articles
+        label: News Articles
+        file: content/news.json
+        format: json
+        fields:
+          - label: Articles
+            name: articles
+            widget: list
+            summary: '{{fields.date}} · {{fields.roster}} · {{fields.title_id}}'
+            minimize_collapsed: true
+            fields:
+              - {label: Slug, name: slug, widget: string, hint: 'URL-friendly: lowercase letters, numbers and hyphens only. Example: seringai-anastasis-2026', pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', 'Use lowercase letters, numbers and hyphens only.']}
+              - {label: Published, name: published, widget: boolean, default: false, hint: 'Turn on only when both language versions are ready.'}
+              - {label: Featured article, name: featured, widget: boolean, default: false}
+              - {label: Publish date, name: date, widget: datetime, format: 'YYYY-MM-DDTHH:mm:ssZ', date_format: 'DD MMM YYYY', time_format: 'HH:mm'}
+              - {label: Category / Roster, name: roster, widget: select, options: ['Brainwashed', 'Seringai', 'Stepforward', 'Negatifa']}
+              - {label: Featured image, name: image, widget: image, choose_url: false, media_library: {config: {multiple: false}}}
+              - {label: Photo credit, name: photo_credit, widget: string, required: false}
+              - {label: Image description — Indonesia, name: image_alt_id, widget: string}
+              - {label: Image description — English, name: image_alt_en, widget: string}
+              - {label: Judul — Indonesia, name: title_id, widget: string}
+              - {label: Title — English, name: title_en, widget: string}
+              - {label: Ringkasan — Indonesia, name: excerpt_id, widget: text}
+              - {label: Excerpt — English, name: excerpt_en, widget: text}
+              - {label: Isi artikel — Indonesia, name: body_id, widget: markdown}
+              - {label: Article body — English, name: body_en, widget: markdown}
+              - {label: Related link URL, name: related_url, widget: string, required: false}
+              - {label: Related link label — Indonesia, name: related_label_id, widget: string, required: false}
+              - {label: Related link label — English, name: related_label_en, widget: string, required: false}
