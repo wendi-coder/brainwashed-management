@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brainwashedmanagement.com/sitemap.xml
