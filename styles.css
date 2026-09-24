@@ -116,7 +116,7 @@ img{display:block;width:100%}
 .contact{padding:24px 3.5vw 30px;min-height:100svh;display:flex;flex-direction:column}
 .contact h2{font:400 clamp(4.5rem,12vw,12rem)/.78 var(--display);letter-spacing:-.08em;text-transform:uppercase;margin:10vw 0 auto}
 .contact h2 span{font-size:.35em;vertical-align:top}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid;margin-top:8vw}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid;margin-top:8vw}
 .contact-grid>div{display:flex;flex-direction:column;padding:18px 0;border-bottom:1px solid}
 .contact-grid span{font:400 .58rem var(--mono);text-transform:uppercase;margin-bottom:15px}
 .contact-grid a{font-size:clamp(1rem,2vw,1.5rem);overflow-wrap:anywhere}
