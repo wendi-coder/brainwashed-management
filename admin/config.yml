@@ -15,10 +15,10 @@ backend:
     deleteMedia: 'Delete “{{path}}” via DecapBridge'
 
 logo_url: https://decapbridge.com/decapcms-with-bridge.svg
-site_url: https://wendi-coder.github.io/brainwashed-management/
-display_url: https://wendi-coder.github.io/brainwashed-management/
+site_url: https://brainwashedmanagement.com/
+display_url: https://brainwashedmanagement.com/
 media_folder: uploads/news
-public_folder: /brainwashed-management/uploads/news
+public_folder: /uploads/news
 
 collections:
   - name: news_content

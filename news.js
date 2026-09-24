@@ -1,5 +1,5 @@
 (function(){
-  const rootPath='/brainwashed-management/';
+  const rootPath='/';
   let articles=[];
   let language=localStorage.getItem('brainwashed-language')||'en';
   let filter='All';
